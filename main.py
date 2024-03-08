@@ -16,14 +16,38 @@ def q2():
     2. Verificação de Número Par/Ímpar: Crie um programa que pede ao usuário 
     um número e imprima se ele é par ou ímpar.
     """
-    print("par ")
+    numero = int(input("Digite um numero"))
+    if numero % 2 == 0:
+        print("par")
+
+    else:
+        print("ímpar")
+
+
+
+
+
 
 def q3():
     """
     3. Calculadora Simples: Faça uma calculadora que pede ao usuário dois 
     números e uma operação (+, -, *, /) e imprima o resultado dessa operação.
     """
-    pass
+ numb1 = int(input("Digite dois números"))
+ numb2 = int(input("Digite dois números"))
+ operação = int(input("Qual é a operação"))
+
+
+ 
+    if operação == "+":
+        print (numb1+numb2)
+        e
+
+     
+ 
+ 
+ 
+ pass
 
 def q4():
     """
@@ -78,3 +102,4 @@ def q10():
     se um ano fornecido pelo usuário é bissexto ou não.
     """
     pass
+
