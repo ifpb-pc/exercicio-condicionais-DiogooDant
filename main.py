@@ -33,35 +33,79 @@ def q3():
     3. Calculadora Simples: Faça uma calculadora que pede ao usuário dois 
     números e uma operação (+, -, *, /) e imprima o resultado dessa operação.
     """
- numb1 = int(input("Digite dois números"))
- numb2 = int(input("Digite dois números"))
- operação = int(input("Qual é a operação"))
+    num1 = float(input("Digite o primeiro número"))
+    num2 = float(input("Digite o segundo número"))
+    opr = input("Qual é a operação")
 
+    if opr == "+":
+        print (num1+num2)
 
- 
-    if operação == "+":
-        print (numb1+numb2)
-        e
+    elif opr == "-":
+        print (num1-num2) 
+    
+    elif opr == "*":
+        print (num1*num2)
+
+    elif opr == "/":
+        print (num1/num2)
+
+    else:
+        print("Resolva novamente")    
+
+        
 
      
  
  
  
- pass
+
 
 def q4():
     """
     4. Maior de Três Números: Escreva um programa que solicita três números 
     ao usuário e imprima o maior dentre eles.
     """
-    pass
+    n1 = float(input("Digite um número"))
+    n2 = float(input("Digite segundo número"))
+    n3 = float(input("Digite terceiro número"))
+
+    if n1 >= n2 and n1 >= n3:
+        print(n1)
+    elif n2 >= n1 and n2 >= n3:
+        print(n2)
+    else:
+        print(n3)
+
+
+
+
+               
+
 
 def q5():
     """
     5. Classificação de Idade: Peça a idade do usuário e imprima a classificação
     em "Criança" (0-12), "Adolescente" (13-19), "Adulto" (20-59) ou "Idoso" (60+).
     """
-    pass
+    #criança = int(input(""))
+    #adolescente = int(input(""))
+    #adulto = int(input(""))
+    #idoso = int(input(""))
+
+    idade = int(input("Digite sua idade:"))
+
+    if idade <= 12:
+        print("criança")
+    elif idade == 13 >= 19:
+        print ("Adolescente")
+
+    elif idade == 20 >= 59:
+        print("Adulto")
+
+    elif idade == 60 >= 90:
+        print("idoso") 
+
+
 
 def q6():
     """
@@ -69,7 +113,7 @@ def q6():
     lados e verifique se eles podem formar um triângulo. Se sim, determine 
     se é um triângulo equilátero, isósceles ou escaleno.
     """
-    pass
+    
 
 def q7():
     """
@@ -77,7 +121,7 @@ def q7():
     de 0 a 100 em uma escala de conceitos: 
     A (90-100), B (80-89), C (70-79), D (60-69), E (50-59).e F (0-49)
     """
-    pass
+    
 
 def q8():
     """
@@ -85,7 +129,7 @@ def q8():
     de usuário e uma senha. Se o nome de usuário for "admin" e a senha for 
     "12345", exiba "Acesso concedido", caso contrário, exiba "Acesso negado".
     """
-    pass
+    
 
 def q9():
     """
@@ -94,12 +138,12 @@ def q9():
       indicando se a pessoa está: Abaixo do peso, Peso normal, Sobrepeso, 
       Obesa ou Muito obesa.
     """
-    pass
+
 
 def q10():
     """
     10. Verificação de Ano Bissexto: Escreva um programa que verifica 
     se um ano fornecido pelo usuário é bissexto ou não.
     """
-    pass
+
 
