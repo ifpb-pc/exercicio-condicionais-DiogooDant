@@ -126,26 +126,21 @@ def q7():
     de 0 a 100 em uma escala de conceitos: 
     A (90-100), B (80-89), C (70-79), D (60-69), E (50-59).e F (0-49)
     """
-    usuario = int(input("Digite sua nota:"))
-    nota1 = 90
-    nota2 = 80
-    nota3 = 70
-    nota4 = 60
-    nota5 = 50
-    nota6 = 0
+    nota = int(input("Digite sua nota:"))
+    
 
-    if nota1 >= 100:
+    if nota >= 90 and nota <= 100:
          print("A")
-    elif nota2 >= 89:
+    elif nota >= 80 and nota <= 89:
         print("B")
-    elif nota3 >= 79:
+    elif nota >= 70 and nota <= 79:
         print("C")
-    elif nota4 >= 69:
+    elif nota >= 60 and nota <= 69:
         print("D")
-    elif nota5 >= 59:
+    elif nota >= 50 and nota <= 59:
         print("E")
     else:
-        print("C")
+        print("F")
     
 
 def q8():
@@ -156,10 +151,12 @@ def q8():
     """
     login = input("Digite seu login:")
     senha = input("Digite sua senha:")
+    ADMIN = "admin"
+    PASSAWORD = "12345"
     
 
-    if login == "admin" and senha == "12345":
-        print ("Acesso consedido")
+    if login == ADMIN and senha == PASSAWORD:
+        print ("Acesso concedido")
 
     else:
         print("Acesso negado")
@@ -173,21 +170,30 @@ def q9():
       indicando se a pessoa está: Abaixo do peso, Peso normal, Sobrepeso, 
       Obesa ou Muito obesa.
     """
-    peso = int(input("Digite seu peso"))
-    altura = float(input("Digite sua altura:"))
+    h = float(input(""))
+    peso = int(input(""))
+    imc = peso/h**2
     
 
-    if peso == 70 and altura == 1.75:
-        print("Peso normal")
-    elif peso == 80 and altura == 1.80:
-        print("Peso normal")
-    elif peso == 80 and altura == 1.60:
-        print("Obeso")
-    elif peso == 90 and altura == 1.55:
-        print("Muito obeso")
-    else:
-        print("Volte do inicio")                
-    
+    match imc:
+        case imc if imc < 18.5:
+            print("Abaixo do peso")
+        case imc if imc > 18.5 and imc < 25:
+            print("Peso normal")
+        case imc if imc > 26 and imc < 30:
+            print("Sobrepeso")
+        case imc if imc > 30 and imc < 35:
+            print("Obeso")
+        case imc if imc > 35 :
+            print("Muito obeso")
+
+
+
+
+
+
+
+
     
 
 
@@ -196,5 +202,5 @@ def q10():
     10. Verificação de Ano Bissexto: Escreva um programa que verifica 
     se um ano fornecido pelo usuário é bissexto ou não.
     """
-
+ 
 
