@@ -92,18 +92,22 @@ def q5():
     #adulto = int(input(""))
     #idoso = int(input(""))
 
-    idade = int(input("Digite sua idade:"))
 
+
+
+
+    idade = int(input("Digite sua idade: "))
+  
     if idade <= 12:
-        print("criança")
-    elif idade == 13 >= 19:
-        print ("Adolescente")
-
-    elif idade == 20 >= 59:
+        print("Criança")
+    elif 13 <= idade <= 19:
+        print("Adolescente")
+    elif 20 <= idade <= 59:
         print("Adulto")
+    else:
+        print("Idoso")
 
-    elif idade == 60 >= 90:
-        print("idoso") 
+ 
 
 
 
@@ -113,6 +117,7 @@ def q6():
     lados e verifique se eles podem formar um triângulo. Se sim, determine 
     se é um triângulo equilátero, isósceles ou escaleno.
     """
+   
     
 
 def q7():
@@ -129,7 +134,16 @@ def q8():
     de usuário e uma senha. Se o nome de usuário for "admin" e a senha for 
     "12345", exiba "Acesso concedido", caso contrário, exiba "Acesso negado".
     """
-    
+    login = input("Digite seu login:")
+    senha = input("Digite sua senha:")
+
+    if login == "admin" and senha == "12345":
+        print ("Acesso consedido")
+
+    else:
+        print("Acesso negado")
+
+      
 
 def q9():
     """
@@ -138,6 +152,22 @@ def q9():
       indicando se a pessoa está: Abaixo do peso, Peso normal, Sobrepeso, 
       Obesa ou Muito obesa.
     """
+    peso = int(input("Digite seu peso"))
+    altura = float(input("Digite sua altura:"))
+    
+
+    if peso == 70 and altura == 1.75:
+        print("Peso normal")
+    elif peso == 80 and altura == 1.80:
+        print("Peso normal")
+    elif peso == 80 and altura == 1.60:
+        print("Obeso")
+    elif peso == 90 and altura == 1.55:
+        print("Muito obeso")
+    else:
+        print("Volte do inicio")                
+    
+    
 
 
 def q10():
