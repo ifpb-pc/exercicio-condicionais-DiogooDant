@@ -126,6 +126,26 @@ def q7():
     de 0 a 100 em uma escala de conceitos: 
     A (90-100), B (80-89), C (70-79), D (60-69), E (50-59).e F (0-49)
     """
+    usuario = int(input("Digite sua nota:"))
+    nota1 = 90
+    nota2 = 80
+    nota3 = 70
+    nota4 = 60
+    nota5 = 50
+    nota6 = 0
+
+    if nota1 >= 100:
+         print("A")
+    elif nota2 >= 89:
+        print("B")
+    elif nota3 >= 79:
+        print("C")
+    elif nota4 >= 69:
+        print("D")
+    elif nota5 >= 59:
+        print("E")
+    else:
+        print("C")
     
 
 def q8():
@@ -136,6 +156,7 @@ def q8():
     """
     login = input("Digite seu login:")
     senha = input("Digite sua senha:")
+    
 
     if login == "admin" and senha == "12345":
         print ("Acesso consedido")
